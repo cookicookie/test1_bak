@@ -12,7 +12,15 @@
     </div>
 </template>
 
-<script></script>
+<script>
+export default {
+    computed: {
+        count() {
+            return this.$store.state.count;
+        }
+    }
+};
+</script>
 
 <style>
 .header-item {

@@ -50,7 +50,7 @@ Vue.filter("sample", function(value) {
 import Vue from "vue";
 import router from "./router";
 import axios from "axios";
-import store from "store";
+// import store from "store";
 
 axios.defaults.baseURL =
     "https://firestore.googleapis.com/v1/projects/vuejs-http-6eb8f/databases/(default)/documents/comments";
