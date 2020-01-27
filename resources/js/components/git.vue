@@ -1,5 +1,5 @@
 <template>
     <div>
-        <p>Gitテスト</p>
+        <p>Git</p>
     </div>
 </template>
