@@ -1,0 +1,15 @@
+<main>
+    <?=getPage()?>
+        <form action="admin_new_done?mode=<?=$_GET['mode']?>&ramen_new_no=<?=$_GET['ramen_new_no']?>" method="post">
+    <table>
+        <tr>
+            <td class="a">内容を確認してください</td>
+        <td>
+            <?=(!empty($_POST['ramen_new_content']) ? $_POST['ramen_new_content'] : $o['ramen_new']['ramen_new_content1'])?>
+        </td>
+        </tr>
+    </table>
+    <input type="submit" name="submit" class="check_btn" value="完了">
+    <input type="hidden" name="ramen_new_content" value="<?=$_POST['ramen_new_content']?>">
+    <form>
+</main>

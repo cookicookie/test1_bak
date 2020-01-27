@@ -1,0 +1,17 @@
+h1{
+  text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+label{
+    margin:0 auto;
+}
+.pass{
+  margin-left: 2px;
+}
+.login_btn{
+  margin-top: 20px;
+}

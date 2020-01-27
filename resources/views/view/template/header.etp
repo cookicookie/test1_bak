@@ -1,0 +1,17 @@
+<?php
+auth_check('admin_login');
+?>
+<html>
+<head>
+	<?php Html::metaChr();?>
+	<?php Html::setCss('common', '20170327-6', '/training/ramen/app/view/css/');?>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<span class="login_name">ログイン名[<?php foreach($a['user_name'] as $k => $v):?><?=$v?><?php endforeach;?>]さん、お疲れ様です。
+			                                   <!--上記の文と同意   <=$a['user_name'][1]?>-->
+			<a class="logout_btn" href="admin_logout"class="header_right">ログアウトする</a></span>
+			<li><a href ="admin_top" class="next">TOP</a></li>
+			<li><a href ="admin_new_list" class="next">新着情報管理</a></li>
+		</header>

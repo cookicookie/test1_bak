@@ -1,0 +1,11 @@
+body{
+  text-align: -webkit-center;
+}
+
+input.send_btn{
+  margin-top: 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 3px;
+  width:5%;
+}

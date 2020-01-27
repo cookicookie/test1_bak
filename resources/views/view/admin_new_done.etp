@@ -1,0 +1,4 @@
+<main class="done_main">
+    <?=getPage()?>
+    <p class="finish"><?=done()?></p>
+</main>

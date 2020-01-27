@@ -1,0 +1,19 @@
+.error{
+  text-align: center;
+  display: block;
+  color:red;
+}
+
+h1{
+  text-align: center;
+}
+
+form{
+  text-align: center;
+}
+.pass{
+  margin-left: 2px;
+}
+.login_btn{
+  margin-top: 20px;
+}

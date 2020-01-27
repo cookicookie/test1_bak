@@ -1,0 +1,40 @@
+<main>
+    <?=getPage()?>
+    <table>
+        <tr>
+            <th>
+                <a href="?sort=ramen_new_no&order=ASC" class="sort">▲</a><br>
+                id<br>
+                <a href="?sort=ramen_new_no&order=DESC" class="sort">▼</a>
+            </th>
+            <th>
+                内容
+            </th>
+            <th>
+                <a href="?sort=ramen_new_upd_ts&order=IS NULL, ramen_new_upd_ts ASC" class="sort">▲</a><br>
+                ID最終更新日時<br>
+                <a href="?sort=ramen_new_upd_ts&order=IS NULL, ramen_new_upd_ts DESC" class="sort">▼</a>
+            </th>                                     <!--order by 以降の文章でどれをソートするかを記述する -->
+            <th>
+                <form action="admin_new_edit?mode=new&ramen_new_no=" method="post"><input type="submit" value="新規登録"></form>
+            </th>
+        </tr>
+        <?php foreach($o['ramen'] as $k => $v):?>
+            <tr>
+                <td>
+                    <p><?=$v['ramen_new_no']?></p>
+                </td><!--$vのnameが['ramen_new_no']を表示-->
+                <td>
+                    <p><?=$v['ramen_new_content']?></p>
+                </td>
+                <td>
+                    <p><?=$v['ramen_new_upd_ts']?></p>
+                </td>
+                <td>
+                    <form action="admin_new_edit?mode=edit&ramen_new_no=<?=$v['ramen_new_no']?>" method="post" ><input type="submit" name="fix" value="編集" class="fix_btn"></form>
+                    <form action="admin_new_conf?mode=del&ramen_new_no=<?=$v['ramen_new_no']?>" method="post"><input type="submit" name="del" value="消去" class="del_btn"></form>
+                </td>
+            </tr>
+        <?php endforeach;?>
+    </table>
+</main>

@@ -1,0 +1,5 @@
+@extends('layouts.layout')
+@include('layouts.head')
+@include('layouts.header')
+@include('layouts.content_done')
+@include('layouts.footer')
