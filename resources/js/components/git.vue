@@ -1,5 +1,5 @@
 <template>
     <div>
-        <p>Git</p>
+        <p>githuｂ</p>
     </div>
 </template>
