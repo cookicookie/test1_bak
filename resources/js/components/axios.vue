@@ -6,9 +6,7 @@
             <router-link to="/register" class="header-item">登録</router-link>
         </header>
         <router-view></router-view>
-        <div>
-            <p>{{ count }}</p>
-        </div>
+        <div></div>
     </div>
 </template>
 
